@@ -1,0 +1,70 @@
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+     Title = "CREEPHUB -- SONIC SPEED SIMULATOR",
+     Style = 2,
+     SizeX = 400,
+     SizeY = 400,
+     Theme = "Dark"
+})
+
+local Page = UI.New({
+    Title = "DISCORD.GG/CREEPHUB"
+})
+
+Page.Button({
+    Text = "Autofarm",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/VandalRevenge02/AutofarmAutoReb/main/AutoREBAutoFARM", true))()
+    end
+})
+
+Page.Button({
+    Text = "Auto Steps",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/VandalRevenge02/NEW-SSM-AUTOSTEP/main/AUTOSTEPNEWSMM", true))()
+    end
+})
+
+Page.Button({
+    Text = "Auto Collect Coins",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/VandalRevenge02/New/main/NEW2", true))()
+    end
+})
+
+Page.Button({
+    Text = "Auto Collect Orbs",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/VandalRevenge02/New/main/NEW2", true))()
+    end
+})
+
+Page.Button({
+    Text = "Server Hop",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/VandalRevenge02/wewe/main/wewe", true))()
+    end
+})
+
+-- Note: This is just a snippet
+Page.Toggle({
+    Text = "Auto Rebirth",
+    Callback = function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VandalRevenge02/AutoRebirthSSM/main/SSM-AutoREB", true))()
+    end,
+    Enabled = true
+})
+
+-- Note: This is just a snippet
+UI.Banner({
+    Text = "The Autofarm button does everything, auto rebirth, autocollect coins & orbs etc"
+})
+
+-- Note: This is just a snippet
+Page.TextField({
+    Text = "Discord.gg/CreepHub",
+    Callback = function(value)
+        print(value)
+    end
+})
